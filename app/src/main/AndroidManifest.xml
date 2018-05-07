@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.abdelmun3m.tripplaner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TripPlaner"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".AddTripActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".listViewActivity" />
+        <activity android:name=".registerActivity" />
+        <activity android:name=".LoginActivty" />
+        <activity android:name=".ProfileActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD9ydzbhQ2DQBIZ-V9Y0RdjYHUyLJophao" />
+
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Alarm" />
+
+        <service
+            android:name=".TripJobService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

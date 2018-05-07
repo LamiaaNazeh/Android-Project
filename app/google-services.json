@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "823370211425",
+    "firebase_url": "https://tripplaner-3c292.firebaseio.com",
+    "project_id": "tripplaner-3c292",
+    "storage_bucket": "tripplaner-3c292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823370211425:android:4b2d36d5c863f01a",
+        "android_client_info": {
+          "package_name": "com.android.abdelmun3m.tripplaner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823370211425-g67k02337jn8lufn7tq5j6rmi1pardkg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLsllP050mKKCtEQ5Czy81MKcf_Zm7mTU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

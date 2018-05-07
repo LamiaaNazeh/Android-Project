@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_hight"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                >
+
+                <TextView
+                    android:id="@+id/NameTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Name"
+                    android:textSize="@dimen/text_display_size"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                </TextView>
+                <EditText
+                    android:id="@+id/NameEditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/NameText"
+                    android:inputType="textPersonName">
+                </EditText>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_hight"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                >
+                <TextView
+                    android:id="@+id/StartTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from"
+                    android:textSize="@dimen/text_display_size"
+                    android:gravity="center">
+                </TextView>
+
+                <fragment
+                    android:id="@+id/place_autocomplete_fragment_start"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_hight"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="@dimen/margin_bottom"
+
+                >
+
+                <TextView
+                    android:id="@+id/EndTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    android:textSize="@dimen/text_display_size"
+                    android:gravity="center">
+                </TextView>
+
+
+                <fragment
+                    android:id="@+id/place_autocomplete_fragment_end"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_hight"
+                android:weightSum="6"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                >
+                <ImageView
+                    android:id="@+id/ibtn_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_date_24dp"
+                    android:backgroundTint="@color/colorAccent"
+                    />
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DateText"
+                    android:textSize="@dimen/text_display_size">
+                </TextView>
+                <ImageView
+                    android:id="@+id/ibtn_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_timer_24dp"
+                    android:backgroundTint="@color/colorAccent"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DateText"
+                    android:textSize="@dimen/text_display_size">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_hight"
+                android:weightSum="3"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_display_size"
+                    android:layout_weight="1"
+                    android:text="Direction"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinner_direction"
+                    android:entries="@array/directions"
+                    android:gravity="center"
+                    >
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_hight"
+                android:weightSum="3"
+                >
+                <TextView
+                    android:id="@+id/CommentTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:text="Nottes"
+                    android:textSize="10pt"
+                    android:gravity="center"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rv_notes">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_hight"
+                    android:orientation="horizontal"
+                    >
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:id="@+id/et_new_note"
+                        />
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_add_24dp"
+                        android:id="@+id/btn_add_note"
+                        android:backgroundTint="@color/colorAccent"                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/AddButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_hight"
+                android:onClick="sendTripInfo"
+                android:text="@string/Add"
+                >
+            </Button>
+        </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

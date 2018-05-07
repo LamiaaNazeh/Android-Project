@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TripPlaner</string>
+
+    <string name="Add_trip">Add your trip here</string>
+    <string name="startPoint">Start Point :</string>
+    <string name="addStartPoint">Add Start Point</string>
+    <string name="endPoint">End Point :</string>
+    <string name="addEndPoint">Add your End Point</string>
+    <string name="tripDate">Ttip Date :</string>
+    <string name="tripTime">Trip Time :</string>
+    <string name="addNotes">Add your notes</string>
+    <string name="tripType">Trip Type:</string>
+    <string name="oneDirection">oneDirection</string>
+    <string name="roundTrip">RoundTrip</string>
+    <string name="addTripBtn">Add Trip</string>
+    <string name="readTripBtn">Get Trip Data</string>
+    <string name="Name">Name</string>
+    <string name="NameText">NameText</string>
+    <string name="Start">Start</string>
+    <string name="End">End</string>
+    <string name="CommentText">CommentText</string>
+    <string name="Comment">Comment</string>
+    <string name="Add">Add</string>
+    <string name="DateText">DateText</string>
+    <string name="TowTripDirection">Tow Trip Direction</string>
+    <string name="OneTripDirection">One Trip Direction</string>
+    <string name="_13_3_inch_256_gb">13.3 Inch, 256 GB</string>
+    <string name="str_tripstatus">status</string>
+    <string name="str_tripName">Name</string>
+    <string name="str_strpoint">startPOint</string>
+    <string name="str_endpoint">endPoint</string>
+    <string name="str_dateTime">dateTIme</string>
+    <string name="str_direction">direction</string>
+    <string name="str_StartTrip">Start Trip</string>
+    <string name="title_activity_login">Login</string>
+    <string name="from">From</string>
+    <string name="to">TO</string>
+
+    <string-array name="directions">
+        <item>One Direction</item>
+        <item>Two Directions</item>
+    </string-array>
+
+</resources>
